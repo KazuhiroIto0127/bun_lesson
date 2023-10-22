@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  bun:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: bun_lesson
+    ports:
+      - 3000:3000
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/app
