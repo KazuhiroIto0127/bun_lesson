@@ -8,4 +8,4 @@ COPY bun.lockb ./
 RUN bun install
 
 COPY . .
-CMD ["sh", "-c", "while true; do sleep 1000; done"]
+CMD ["bun", "run", "start"]
